@@ -1,6 +1,8 @@
-// # Page Reset
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-// <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
+// # Page Reset
+// <!-- from https://www.joshwcomeau.com/css/custom-css-reset/
 // page reset
 /*
 
@@ -77,6 +79,122 @@ h6 {
   9. Create a root stacking context
 */
 
-# root # __next {
+:root {
     isolation: isolate;
+    font-size: 18px;
+    --shadow-color: hsl(0, 0%, 59%);
+    --age-color: hsl(227, 10%, 46%);
+    --category-color: hsl(227, 10%, 46%);
+    --local-color: hsl(227, 10%, 46%);
+    --bg-color: hsl(185, 75%, 39%);
+    --name-color: hsl(229, 23%, 23%);
+    --stats-color: hsl(229, 23%, 23%);
+    // --Dark-cyan: hsl(185, 75%, 39%);
+    // --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    // --Dark-grayish-blue: hsl(227, 10%, 46%);
+    // --Dark-gray: hsl(0, 0%, 59%);
+}
+/* PLACE ALL ELEMENT FORMATTING BELOW HERE*/
+
+// html {
+/* ABOVE EFFECTS ALL ELEMENTS */
+// }
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right bottom, top left;
+    // background-origin: right bottom, top left;
+    background-repeat: no-repeat;
+    // align-items: center;
+    // justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+}
+
+/* ABOVE EFFECTS BODY ELEMENTS */
+
+.abs {
+    position: absolute;
+}
+
+/* ABOVE GIVES ELEMENTS ABSOLUTE POSITION */
+
+.rel {
+    position: relative;
+}
+
+/* ABOVE GIVES ELEMENTS RELATIVE POSITION */
+
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ABOVE MAKES A FLEX ROW */
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ABOVE MAKES A FLEX COLUMN */
+
+.fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOVE MAKES FLEX ELEMENTS CENTERED */
+
+@media only screen and (min-width: 375px) and (max-width: 769px) {
+    /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
+
+    .card {
+        background-color: white;
+    }
+    /* ABOVE TARGETS ALL CLASS FORMATTING */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+    /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1400px SCREEN SIZE*/
+
+    /* ABOVE TARGETS ALL ID FORMATTING */
+    .card {
+        background-color: white;
+        width: 12rem;
+        width: 19.4rem;
+        margin: 5rem auto;
+        border-radius: 1rem;
+    }
+
+    .card-top img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .profile-pic {
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    .name,
+    .amount {
+        color: var(--name-color);
+        font-weight: 700;
+    }
+    .age,
+    .location,
+    .stats {
+        color: var(--age-color);
+    }
+
+    .amounts p,
+    .catagories p {
+        margin: 0 1rem;
+    }
+    /* ABOVE TARGETS ALL CLASS FORMATTING */
 }
