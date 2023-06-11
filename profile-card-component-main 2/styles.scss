@@ -153,9 +153,11 @@ body {
 @media only screen and (min-width: 375px) and (max-width: 769px) {
     /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
 
-    .card {
-        background-color: white;
-    }
+    background-color: white;
+    width: 12rem;
+    width: 19.4rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
     /* ABOVE TARGETS ALL CLASS FORMATTING */
 }
 
@@ -176,9 +178,14 @@ body {
         border-top-right-radius: 1rem;
     }
 
-    .profile-pic {
+    .profile-pic img {
         border-radius: 50%;
         border: 1px solid white;
+    }
+
+    .location {
+        margin-bottom: 4rem;
+        font-weight: 400;
     }
 
     .name,

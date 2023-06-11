@@ -146,9 +146,10 @@ body {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
   }
-  .profile-pic {
+  .profile-pic img {
     border-radius: 50%;
     border: 1px solid white;
+    display: inline-block;
   }
   .name,
   .amount {
