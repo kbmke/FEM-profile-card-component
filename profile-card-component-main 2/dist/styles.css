@@ -100,6 +100,10 @@ body {
   position: absolute;
 }
 
+.stat-title {
+  font-size: smaller;
+}
+
 /* ABOVE GIVES ELEMENTS ABSOLUTE POSITION */
 .rel {
   position: relative;
@@ -129,6 +133,36 @@ body {
   /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
   .card {
     background-color: white;
+    width: 18rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+  }
+  .card-top img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 18rem;
+  }
+  .profile-pic img {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .location {
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  .name,
+  .amount {
+    color: var(--name-color);
+    font-weight: 700;
+  }
+  .age,
+  .location,
+  .stats {
+    color: var(--age-color);
+  }
+  .amounts p,
+  .catagories p {
+    margin: 0 1rem;
   }
   /* ABOVE TARGETS ALL CLASS FORMATTING */
 }
@@ -149,7 +183,10 @@ body {
   .profile-pic img {
     border-radius: 50%;
     border: 1px solid white;
-    display: inline-block;
+  }
+  .location {
+    margin-bottom: 4rem;
+    font-weight: 700;
   }
   .name,
   .amount {
