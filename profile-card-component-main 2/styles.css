@@ -149,23 +149,68 @@ body {
   .location {
     margin-bottom: 4rem;
     font-weight: 700;
+    border-bottom: 1px;
   }
-  .name,
-  .amount {
+  .line {
+    /* ABOVE TARGETS ALL CLASS FORMATTING */
+  }
+  .line .card {
+    background-color: white;
+    width: 12rem;
+    width: 19.4rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+  }
+  .line .card-top img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .line .profile-pic img {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .line .location {
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  .line .line {
+    border-bottom: 1px solid black;
+    position: relative;
+    display: absolute;
+  }
+  .line .name,
+  .line .amount {
     color: var(--name-color);
     font-weight: 700;
   }
-  .age,
-  .location,
-  .stats {
+  .line .age,
+  .line .location,
+  .line .stats {
     color: var(--age-color);
   }
-  .amounts p,
-  .catagories p {
+  .line .amounts p,
+  .line .catagories p {
     margin: 0 1rem;
   }
-  /* ABOVE TARGETS ALL CLASS FORMATTING */
 }
+.name,
+.amount {
+  color: var(--name-color);
+  font-weight: 700;
+}
+
+.age,
+.location,
+.stats {
+  color: var(--age-color);
+}
+
+.amounts p,
+.catagories p {
+  margin: 0 1rem;
+}
+
+/* ABOVE TARGETS ALL CLASS FORMATTING */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1400px SCREEN SIZE*/
   /* ABOVE TARGETS ALL ID FORMATTING */
