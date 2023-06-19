@@ -230,7 +230,7 @@ body {
     border: 1px solid white;
   }
   .location {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     font-weight: 700;
   }
   .name,
@@ -243,9 +243,8 @@ body {
   .stats {
     color: var(--age-color);
   }
-  .amounts p,
-  .catagories p {
-    margin: 0 1rem;
+  .stats {
+    margin-bottom: 1rem;
   }
   /* ABOVE TARGETS ALL CLASS FORMATTING */
 }/*# sourceMappingURL=styles.css.map */

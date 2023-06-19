@@ -268,7 +268,7 @@ body {
     }
 
     .location {
-        margin-bottom: 4rem;
+        margin-bottom: 2.5rem;
         font-weight: 700;
     }
 
@@ -283,9 +283,14 @@ body {
         color: var(--age-color);
     }
 
-    .amounts p,
-    .catagories p {
-        margin: 0 1rem;
+    // .amounts p,
+    // .catagories p {
+    //     margin: 0 1rem;
+    // }
+
+    .stats {
+        margin-bottom: 1rem;
     }
+
     /* ABOVE TARGETS ALL CLASS FORMATTING */
 }
