@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,20 +29,26 @@
     <!-- MAIN STYLESHEET -->
   </head>
   <body>
-    <article class="card fcenter flexc">
+    <!-- <div class="bg-top">
+      <img src="/images/bg-pattern-top.svg" alt="" />
+    </div> -->
+
+    <article class="card">
       <section class="card-top">
         <img src="images/bg-pattern-card.svg" alt="" />
       </section>
-      <div class="profile-pic fcenter">
+      <div class="profile-pic-container profile-pic fcenter">
         <img
           class="profile-pic fcenter"
           src="images/image-victor.jpg"
           alt="profile image of Victor"
         />
       </div>
-      <h1 class="name">Victor Crest <span class="age">26</span></h1>
-      <p class="location">London</p>
-      <div class="line"></div>
+      <div class="info">
+        <h1 class="name">Victor Crest <span class="age">26</span></h1>
+        <p class="location">London</p>
+      </div>
+      <hr />
       <section class="stats">
         <div class="amounts flexr fcenter">
           <div class="followers fcenter flexc">
@@ -58,12 +66,15 @@
         </div>
       </section>
     </article>
-
+    <!-- <div class="bg-bottom">
+      <img src="/images/bg-pattern-bottom.svg" alt="" />
+    </div> -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">KB</a>.
+      >
+      Coded by <a href="#">KB</a>.
     </div>
   </body>
 </html>
