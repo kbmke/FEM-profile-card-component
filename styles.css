@@ -220,7 +220,7 @@ body {
 
   body {
     background-image: url(/images/bg-pattern-top.svg);
-    position: absolute;
+    background-position: left top;
     background-repeat: no-repeat;
   }
 
